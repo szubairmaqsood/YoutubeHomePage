@@ -1,0 +1,247 @@
+
+body
+{
+  
+   display: grid;
+   grid-template-columns: 15% 85%;
+}
+
+img 
+{
+    width: 24px;
+    height: 24px;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+.branding ,.header
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #ffffff;
+}
+
+
+
+
+
+/* Branding*/
+.branding
+{
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+    
+}
+.branding img
+{
+    width:  50px;
+    height: 55px;
+    padding-right: 20px;
+   
+}
+
+.branding #Logo_Youtube
+{
+    width:  80px;
+}
+
+/* Header*/
+.header
+{
+    display: flex;
+    padding-right: 30px;
+    border-bottom: #ccc 1px solid;
+    
+
+}
+
+/*     Search      */
+.header__Search
+{
+   display: flex;
+   flex: 0.8;
+   justify-content: center;
+   
+}
+
+.header__Search input
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 18px;
+    width:50%;
+    
+}
+
+.header__Search img{
+    
+    height: 20px ;
+    width:60px;
+    padding:6px;
+    background-color:#ccc;
+    
+}
+
+/*    Header Navigation    */
+.header_nav
+{
+   
+    display: flex;
+    flex: 0.15;
+    justify-content: space-between;
+ 
+}
+
+
+
+/* Side Menu */
+.SideMenu
+{
+    overflow-x: hidden;
+    overflow-y: auto; /* or auto */
+   
+}
+
+.YoutubeMainOptions ,.AccountRelatedOptions, .SubscriptionInformation ,.MoreOptions ,.Setting ,.AboutandContact ,.Terms
+{
+    display: flex;
+    flex-direction: column;
+    border-bottom: #ccc 1px solid;
+    
+}
+.AboutandContact ,.Terms ,.SideBarFooter
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.SideBarFooter
+{
+ padding-top: 10%;
+}
+
+.YoutubeMainOptions >div ,.AccountRelatedOptions >div , .SubscriptionInformation > div , .MoreOptions >div ,.Setting >div ,.AboutandContact >div ,.Terms >div
+{
+  margin-top: 10px;
+ 
+}
+
+.YoutubeMainOptions >div:hover ,.AccountRelatedOptions >div:hover , .SubscriptionInformation > div:hover , .MoreOptions >div:hover ,.Setting> div:hover 
+{
+    background: #ccc;
+}
+
+
+.YoutubeMainOptions >div img , .AccountRelatedOptions >div img   ,.SubscriptionInformation >div img , .MoreOptions >div img ,.Setting> div img , .AboutandContact > div img , .Terms >div img
+{
+  
+  margin-right: 15px;
+    
+}
+
+.SubscriptionInformation >div img
+{
+    border-radius: 50%;
+}
+
+/*    Main Content  */
+.MainContent
+{
+    display: grid;
+    grid-template-columns: 23% 23%  23% 23%;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #eee;
+    
+}
+
+.MainContent >div
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:10px ;
+    background: chartreuse;
+   
+   
+}
+.MainContent >div .VideoImage
+{
+
+    width: 100%;
+    height: 150px;
+    object-fit:contain;
+    align-self: flex-start;
+    
+}
+.VideoInformationandLogo
+{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.VideoInformationandLogo img
+{
+    width: 24px;
+    height: 48px;
+}
+
+.VideoInformationandLogo p
+{
+    white-space: wrap;
+    line-height: 1.5em;
+    height: 3em;       /* height is 2x line-height, so two lines will display */
+    overflow: hidden;  /* prevents extra lines from being visible */
+   
+   
+    
+}
+
+
+
+.ChannelName
+{
+    display: block;
+}
+
+@media(max-width:768px)
+{
+    body
+    {
+        grid-template-columns: 30% 70%;
+    }
+    .MainContent
+    {
+        grid-template-columns: 90%;
+    }
+
+    .header__Search
+    {
+        flex: 0.6;
+    }
+
+    .header__Search img
+    {
+        width: 20px;
+    }
+    .header_nav
+    {
+        flex: 0.40;
+    }
+}
+
+/*   To add dots in the end */
+
+ 
+
+
+
+
+
+
+
+
