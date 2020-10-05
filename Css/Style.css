@@ -102,8 +102,12 @@ a{
 /* Side Menu */
 .SideMenu
 {
+    position: sticky;
+    top:5%;
     overflow-x: hidden;
     overflow-y: auto; /* or auto */
+    height:70%;
+    
    
 }
 
