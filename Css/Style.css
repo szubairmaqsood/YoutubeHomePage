@@ -156,9 +156,10 @@ a{
 .MainContent
 {
     display: grid;
-    grid-template-columns: 23% 23%  23% 23%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-around;
     align-items: flex-start;
+    text-align: center;
     background: #eee;
     
 }
@@ -168,9 +169,6 @@ a{
     display: flex;
     flex-direction: column;
     margin-top:10px ;
-    background: chartreuse;
-   
-   
 }
 .MainContent >div .VideoImage
 {
@@ -185,6 +183,8 @@ a{
 {
     display: flex;
     margin-top: 10px;
+    padding-left:40px;
+    padding-right:40px;
     justify-content: center;
 }
 
@@ -212,16 +212,19 @@ a{
     display: block;
 }
 
-@media(max-width:768px)
+
+@media(max-width:921px)
 {
     body
     {
         grid-template-columns: 30% 70%;
     }
+    
     .MainContent
     {
-        grid-template-columns: 90%;
+        grid-template-columns: 1fr;
     }
+    
 
     .header__Search
     {
